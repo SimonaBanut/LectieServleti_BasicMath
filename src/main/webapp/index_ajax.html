@@ -6,7 +6,7 @@
        function sendValues(param){
              xmlHttp = new XMLHttpRequest();
              xmlHttp.onreadystatechange=callback;
-             var url ="operatiiMatematiceAjax"+"?nr1="+document.getElementById("nr1").value+"&nr2="+document.getElementById("nr2").value+"&op="+param;
+             var url ="operatiiMatematiceAjax"+"?nr1="+document.getElementById("nr1").value+"&nr2="+document.getElementById("nr2").value+"&nr3="+document.getElementById("nr3").value+"&op="+param;
              xmlHttp.open("GET",url,true);
              xmlHttp.send();
          }
@@ -29,6 +29,7 @@
 
     Nr1:<input type="text" name="nr1" id="nr1" /></br>
     Nr2:<input type="text" name="nr2" id="nr2" /></br>
+    Nr3:<input type="text" name="nr3" id="nr3" /></br>
 
     <input type="button" name="a" id="a" value="+" onclick="sendValues(1)"/>&nbsp;
     <input type="button" name="s" id="a" value="-" onclick="sendValues(2)"/>&nbsp;
